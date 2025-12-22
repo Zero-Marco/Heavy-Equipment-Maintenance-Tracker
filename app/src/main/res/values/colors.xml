@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary App Colors (Corporate Blue Palette) -->
+    <color name="colorPrimary">#1A73E8</color>          <!-- Main Blue (e.g., Toolbar, FAB, Buttons) -->
+    <color name="colorPrimaryDark">#1764CC</color>      <!-- Darker shade for status bar -->
+    <color name="colorAccent">#34A853</color>           <!-- Secondary Green (for success/indicators) -->
+
+    <!-- Text & UI Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#202124</color>                <!-- Near-Black for sharp contrast -->
+    <color name="textSecondary">#5F6368</color>        <!-- Dark Gray for descriptions/hints -->
+
+    <!-- Backgrounds -->
+    <color name="backgroundLight">#F0F4F8</color>      <!-- Light blue-gray for main screens -->
+    <color name="cardBackground">#FFFFFF</color>       <!-- Pure White for cards/containers -->
+    <color name="imagePlaceholder">#E5EAEF</color>     <!-- Subtle light gray for image slots -->
+</resources>

@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HeaveyEqupments" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary branding color for the app (used for FAB, buttons, etc.) -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- Darker variant for the status bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimaryDark</item>
+
+        <!-- Secondary branding color (using colorAccent from your palette) -->
+        <item name="colorSecondary">@color/colorAccent</item>
+
+        <!-- Set the default window background for a consistent look -->
+        <item name="android:windowBackground">@color/backgroundLight</item>
+
+        <!-- Ensure text input fields use the primary color -->
+        <item name="textInputStyle">@style/Widget.Material3.TextInputLayout.OutlinedBox</item>
+        <item name="android:textColorPrimary">@color/black</item>
+
+        <item name="android:textColorHint">@color/textSecondary</item>
+
+        <item name="textAppearanceBodyLarge">@style/App.TextAppearance.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/App.TextAppearance.BodyMedium</item>
+
+    </style>
+
+    <style name="Theme.HeaveyEqupments" parent="Base.Theme.HeaveyEqupments" />
+
+    <style name="App.TextAppearance.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="App.TextAppearance.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+</resources>

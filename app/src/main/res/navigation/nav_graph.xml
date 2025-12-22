@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.heaveyequpments.ui.equipment.EquipmentListFragment"
+        android:label="Heavy Equipments"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_list_to_add"
+            app:destination="@id/addHeavyEquipmentsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addHeavyEquipmentsFragment"
+        android:name="com.example.heaveyequpments.ui.equipment.AddEquipmentFragment"
+        android:label="Add Equipment"
+        tools:layout="@layout/fragment_add_heavye_equpment">
+        <argument
+            android:name="equipmentId"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="Add New Equipment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MaintenanceListFragment"
+        android:name="com.example.heaveyequpments.ui.maintenance.MaintenanceListFragment"
+        android:label="Maintenance Logs"
+        tools:layout="@layout/fragment_main_maintenance">
+        <action
+            android:id="@+id/action_list_to_add_log"
+            app:destination="@id/addMaintenanceLog"/>
+        <action
+            android:id="@+id/action_MaintenanceListFragment_to_ReportFragment"
+            app:destination="@id/reportSelectionFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addMaintenanceLog"
+        android:name="com.example.heaveyequpments.ui.maintenance.AddMaintenanceLog"
+        android:label="Maintenance Log">
+        <argument
+            android:name="logId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reportSelectionFragment"
+        android:name="com.example.heaveyequpments.reports.ui.ReportSelectionFragment"
+        android:label="Report Selection"
+        tools:layout="@layout/fragment_report_selection" />
+
+</navigation>

@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HeaveyEqupments" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary branding color for the app (used for FAB, buttons, etc.) -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- Darker variant for the status bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimaryDark</item>
+
+        <!-- Secondary branding color (using colorAccent from your palette) -->
+        <item name="colorSecondary">@color/colorAccent</item>
+
+        <!-- Set the default window background for a consistent look -->
+        <item name="android:windowBackground">@color/backgroundLight</item>
+
+        <!-- Ensure text input fields use the primary color -->
+        <item name="textInputStyle">@style/Widget.Material3.TextInputLayout.OutlinedBox</item>
+
+    </style>
+
+    <style name="Theme.HeaveyEqupments" parent="Base.Theme.HeaveyEqupments" />
+</resources>

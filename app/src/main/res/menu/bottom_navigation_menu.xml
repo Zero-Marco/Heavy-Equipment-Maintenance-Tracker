@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Equipment List (Must match fragment ID: heavyEquipmentsListFragment) -->
+    <item
+        android:id="@+id/MainFragment"
+        android:icon="@android:drawable/ic_menu_slideshow"
+        android:title="Equipment" />
+
+    <!-- Parts Inventory (Placeholder Fragment ID) -->
+    <item
+        android:id="@+id/partsInventoryFragment"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Parts" />
+
+    <!-- Maintenance Logs (Placeholder Fragment ID) -->
+    <item
+        android:id="@+id/MaintenanceListFragment"
+        android:name="com.example.heaveyequpments.ui.maintenance.MaintenanceListFragment"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Logs" />
+</menu>

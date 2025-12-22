@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="#757575"> <!-- A standard gray tint for placeholders -->
+
+    <!-- This path draws the landscape icon: a mountain and a sun/cloud -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M21,19L3,19C2.45,19 2,18.55 2,18L2,6C2,5.45 2.45,5 3,5L21,5C21.55,5 22,5.45 22,6L22,18C22,18.55 21.55,19 21,19ZM5,14L8.5,9L11,12.5L14.5,8L19,14L5,14Z"/>
+
+    <!-- The main path is usually combined with a background path, but for simplicity,
+         we use the full path to represent a picture/gallery icon.
+         This path draws a simple landscape inside a rectangular frame. -->
+    <path
+        android:fillColor="@android:color/white"
+        android:strokeColor="#757575"
+        android:strokeWidth="1"
+        android:pathData="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
+    <path
+        android:fillColor="#757575"
+        android:pathData="M14.12 10.47L12 8.5L7.92 13H17l-2.88-3.53z" />
+</vector>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="120dp"
+    android:layout_width="match_parent"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="#FFFFFF"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="#FFFFFF">
+
+        <!-- 1. IMAGE VIEW (Largest and most prominent element) -->
+        <ImageView
+            android:id="@+id/imageEquipments"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:background="#E0E0E0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            android:contentDescription="Equipment Photo"
+            android:clipToOutline="true"
+            android:backgroundTint="#F0F0F0" />
+
+        <!-- 2. Equipment Name (Primary Title) -->
+        <TextView
+            android:id="@+id/NameEquipments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintTop_toTopOf="@id/imageEquipments"
+            app:layout_constraintStart_toEndOf="@id/imageEquipments"
+            app:layout_constraintEnd_toStartOf="@id/numberEquipments"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            tools:text="Caterpillar D6T Dozer" />
+
+        <!-- 3. Unit Number (Metadata Chip, Aligned to top-right) -->
+        <TextView
+            android:id="@+id/numberEquipments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/unit_number_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingVertical="4dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toTopOf="@id/NameEquipments"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="#4501A" />
+
+        <!-- 4. Description (Secondary Text) -->
+        <TextView
+            android:id="@+id/DescriptionEquipments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/NameEquipments"
+            app:layout_constraintStart_toStartOf="@id/NameEquipments"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Heavy-duty track-type tractor used for grading, pushing, and excavation." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
