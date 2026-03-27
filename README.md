@@ -35,7 +35,9 @@ The project emphasizes maintainability through:
 * **Permission Security:** Implemented `FileProvider` with temporary URI grants to securely share PDF reports with external applications.
 
 ## 📸 Screenshots
-*(Drop 2 or 3 screenshots of your app directly from your computer right here!)*
+<img width="1080" height="2400" alt="Screenshot_1772557021" src="https://github.com/user-attachments/assets/907ff58e-d8d0-40c1-ac1c-b1a1fce39d60" />
+<img width="1080" height="2400" alt="Screenshot_1772557571" src="https://github.com/user-attachments/assets/71187a07-6803-4606-a3bc-53c33dd162df" />
+
 
 ---
 *Designed and Developed by [Marco Mina](https://github.com/Zero-Marco)*
